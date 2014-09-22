@@ -1,0 +1,61 @@
+<HTML>
+<HEAD>
+<TITLE>Chatter</TITLE>
+<script src="scripts/script.js"></script>
+</HEAD>
+<BODY BGCOLOR="FFFFFF">
+<div id="597-like"></div>
+<H1>Chatter Alpha</H1>
+<p>Response Status:</p><p id="status"></p>
+<div>
+	Create or Get User: <input type="text" id="userName"><br>
+	<button type="button" onclick="createUser()">Create</button>
+	<button type="button" onclick="getUserByName()">Get User By Name</button>
+	<p>Created Id:</p><p id="createdId"></p>
+	
+	Login: <input type="text" id="login"><br>
+	<button type="button" onclick="login()">Login</button>
+	<p>User Id From Name </p><p id="userId"></p>
+
+</div>
+<div>
+	<button type="button" onclick="getPendingIncoming()">Get Pending Incoming</button>
+	<button type="button" onclick="getPendingOutGoing()">Get Pending Outgoing</button>
+	<p>Pending Incoming Results: </p><p id="pendingIncomingResults"></p>
+	<p>Pending Outgoing Results:</p><p id="pendingOutgoingResults"></p>
+</div>
+<div>
+	Follow User: <input type="text" id="userToFollow"><br>
+	<button type="button" onclick="followUser()">Follow User</button>
+	<button type="button" onclick="unfollowUser()">Unfollow User</button>
+	<button type="button" onclick="listFollowers()">List Following</button>
+	<button type="button" onclick="listFollowing()">List Followers</button>
+	<p>Followed User ID: </p><p id="followedUserID"></p>
+	<p>UnFollowed User ID: </p><p id="unfollowedUserID"></p>
+	<p>Following List: </p><p id="followingList"></p>
+	<p>Followers List: </p><p id="followersList"></p>
+</div>
+<div>
+	Tweet Msg: <input type="text" id="tweetMsg"><br>
+	<button type="button" onclick="tweet()">Send Tweet</button>
+	<p>Tweet Id Result: </p><p id="tweetId"></p>
+</div>
+<div>
+	Get Tweet By Id: <input type="text" id="tweetById"><br>
+	<button type="button" onclick="getTweetById()">Get Tweet</button>
+	<p>Pending Incoming Results: </p><p id="tweetByIdResult"></p>
+</div>
+<div>
+	Destroy Tweet: <input type="text" id="tweetToRemove"><br>
+	<button type="button" onclick="removeTweet()">Remove Tweet</button>
+	<p>Remove Tweet Id: </p><p id="removedTweetId"></p>
+</div>
+<div>
+	Retweet Tweet: <input type="text" id="reTweet"><br>
+	<button type="button" onclick="retweetTweet()">Retweet Tweet</button>
+	<p>Retweet Result: </p><p id="retweetResult"></p>
+</div>
+
+<hr/>
+</BODY>
+</HTML> 

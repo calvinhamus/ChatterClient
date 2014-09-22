@@ -1,4 +1,4 @@
-var BASE_URL = "http://localhost:9090/plugin/";
+var BASE_URL = "http://localhost:9090/";
 
 onload = function() {
     	var url = document.URL;
@@ -28,7 +28,7 @@ function reportClick(){
 function getButton(){
 	try{
 		var request = new XMLHttpRequest();
-    		request.open("GET", BASE_URL + 'button', false);
+    		request.open("GET", BASE_URL + 'button/login', false);
     		request.onload = function() {
         		if (request.status === 200) {
             			document.getElementById("597-like").innerHTML = request.responseText;
